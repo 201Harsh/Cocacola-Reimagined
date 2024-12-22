@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #111;
+}
+
+.main-container {
+  overflow: hidden;
+}
+
+
+.logo {
+  width: 150px;
+  object-fit: cover;
+}
+
+.coke {
+  background: url('/bg-coke.webp') center center no-repeat;
+  background-size: cover;
+}
+
+.mySwiper img {
+  object-fit: cover !important;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.follower {
+  z-index: 1000;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.slide img {
+  object-fit: contain !important;
+  height: 100% !important;
+  width: 100% !important;
+}
+
+.heading {
+  text-shadow: 0 0 10px #c04949, 0 0 20px #c04949, 0 0 30px #c04949,
+    0 0 40px #c04949, 0 0 50px #c04949, 0 0 60px #6e4040, 0 0 70px #eb1515;
+}
+
+.canvas-container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* This makes the parent container fill the full height of the viewport */
+  overflow: hidden; /* Ensure the canvas is not clipped */
+  z-index: 10; /* Ensure it's in the stacking context */
+}
